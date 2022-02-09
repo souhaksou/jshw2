@@ -151,7 +151,7 @@ function sortUpDown() {
     Up[i].classList.remove("sort-active");
     Down[i].classList.remove("sort-active");
   }
-  //if (sortNum == advanceNum) return;
+  if (infoSort.length == 0) return;
   Up[advanceNum - 1].classList.toggle("sort-active");
   Down[advanceNum - 1].classList.toggle("sort-active");
   sortNum = advanceNum; //記錄上次
